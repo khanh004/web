@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, san-serif;
+    margin-left:160px;
+    margin-right:370px;
+    text-align: left;
+}
+h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+.notification{
+    background-color:#f5f5f5 ;
+    padding: 15px;
+    font-size: 14px;
+    color:#333 ;
+    margin: 20px 0;
+    max-width: 600px;
+}
+.notification::before{
+    content: "Note: ";
+    font-weight: bold;
+}
+.black-line{
+    border: none;
+    height: 1px;
+    width: 800px;
+    margin: 20px auto;
+    background-color: black;
+}
+
+p{
+    
+    margin-top: 20px;
+    font-size: 17px;
+}
+i{
+    padding-left: 40px;
+    padding-right: 250px;
+    margin-top: 80px;
+    font-size: 17px;
+}
+.store-button {
+    background-color: #0078D7; /* Màu xanh */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Khoảng đệm xung quanh chữ */
+    font-size: 16px; /* Kích thước chữ */
+    border: none; /* Không có viền */
+    border-radius: 4px; /* Góc bo tròn */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi di chuột qua */
+    display: inline-block; /* Hiển thị dưới dạng khối nội tuyến */
+    text-align: center; /* Căn giữa chữ */
+    font-weight: bold; /* Chữ in đậm */
+    text-decoration: none; /* Bỏ gạch chân nếu là liên kết */
+}
+
+.store-button:hover {
+    background-color: #005a9e; /* Màu xanh đậm hơn khi hover */
+}
+img{
+    text-align:left;;
+}
+ul{
+    margin-top: 20px;
+}

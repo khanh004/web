@@ -1,0 +1,72 @@
+body{
+    background-color: rgba(207, 205, 205, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Thay đổi căn chỉnh từ center sang flex-start */
+    min-height: 100vh; /* Đảm bảo body chiếm ít nhất 100% chiều cao màn hình */
+    margin: 0;
+}
+
+.rectangle{
+    width: 90%; /* Chiều rộng của hình chữ nhật */
+    max-width: 1000px; /* Chiều rộng tối đa */
+    min-height: 500px; /* Chiều cao tối thiểu của hình chữ nhật */
+    background-color: white; /* Màu nền trắng */
+    border: 1px solid #e0e0e0; /* Viền mỏng màu xám nhạt */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    padding: 50px; /* Khoảng cách giữa nội dung và viền */
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 2px; /* Bo tròn các góc */
+}
+
+.rectangle img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+    height: auto; /* Giữ tỷ lệ của hình ảnh */
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: bold; 
+    padding-left: 1px;
+    padding-right: 270px;
+}
+
+h2{
+    padding-right: 270px;
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+/* Loại bỏ dấu chấm mặc định và thiết lập kiểu danh sách */
+ul {
+    list-style-type: none; /* Loại bỏ dấu chấm mặc định */
+    padding: 0; /* Xóa padding mặc định */
+    margin: 0; /* Xóa margin mặc định */
+}
+
+/* Tùy chỉnh các mục danh sách */
+ul li {
+    position: relative; /* Đặt thuộc tính relative để sử dụng absolute cho ::before */
+    padding-left: 25px; /* Khoảng cách giữa dấu chấm và văn bản */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    font-size: 16px; /* Kích thước văn bản */
+    color: black; /* Màu văn bản */
+}
+
+/* Tạo dấu chấm tùy chỉnh */
+ul li::before {
+    content: '\2022'; /* Ký tự dấu chấm (•) */
+    color: red; /* Màu của dấu chấm */
+    font-size: 20px; /* Kích thước của dấu chấm */
+    position: absolute; /* Đặt dấu chấm tuyệt đối so với li */
+    left: 0; /* Vị trí trái của dấu chấm */
+    top: 50%; /* Vị trí trên của dấu chấm */
+    transform: translateY(-50%); /* Căn giữa dấu chấm theo chiều dọc */
+}
+
+p{
+    padding-right: 270px;
+}
+

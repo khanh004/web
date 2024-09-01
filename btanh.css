@@ -1,0 +1,13 @@
+.img{
+    width: 300px;
+    height: 200px;
+    transition: opacity 0.3s ease; /* Thời gian chuyển đổi hiệu ứng */
+    object-fit: cover; 
+
+    
+} 
+.img:active{
+    cursor: pointer;
+    opacity: 0.5; /* Giảm độ trong suốt của ảnh xuống 50% khi nhấn và giữ chuột */
+
+}

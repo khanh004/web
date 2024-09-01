@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Hộp sẽ chiếm 80% chiều rộng của cửa sổ trình duyệt */
+    max-width: 600px; /* Đặt giới hạn chiều rộng tối đa */
+    height: 200px; /* Chiều cao cố định */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của hộp */
+  }
+  #hcn{
+    background-color: lightslategray;
+    width: 90%;
+    height : 40px;
+    border: 2px solid black;
+
+
+  }
+  
+  p {
+    margin: 0;
+  }
+  

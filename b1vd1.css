@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(219, 225, 231);
+    margin-left: 200px;
+    margin-top: 40px;
+    border: 1px solid black;
+    height: 100%  ;
+    width: 1100px;
+       
+}
+.content{
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 300px;
+    background-color: white;
+
+
+}
+img{
+    height: 100%;
+    max-width:100%;
+}
+h1{
+    
+    font-size: 20px;
+    font-weight:normal;
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 18px;
+}
+ul{
+    font-size: 14px;
+}
+
+

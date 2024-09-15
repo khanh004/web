@@ -49,7 +49,7 @@ a{
     cursor: pointer;
 }
 a:hover{
-    color: rgb(91, 185, 167); ;
+    color: rgb(91, 185, 167);
 }
 .grid-content {
     display: grid;
@@ -69,6 +69,11 @@ a:hover{
     align-items: center; /* Căn giữa theo chiều dọc */
     text-decoration: none;
     color: black;
+
+}
+.grid-right a:hover{
+    color: rgb(91, 185, 167);
+
 }
 
 .grid-right img {

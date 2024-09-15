@@ -27,6 +27,9 @@ h1{
     align-items: center;
     justify-content: center;
 }
+.menu-dau a:hover{
+    background-color: rgb(41, 107, 92);
+}
 
 
 .grid-container{

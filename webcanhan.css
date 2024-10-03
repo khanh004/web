@@ -1,91 +1,82 @@
+/* CSS Variables for Dark Theme */
 :root {
-    --primary-color: #3498db;
-    --background-color: #ffffff;
-    --text-color: #333333;
-    --header-background: #f8f8f8;
-    --footer-background: #f1f1f1;
-    --toggle-button-background: #3498db;
-    --toggle-button-text: #ffffff;
-}
-
-.dark-theme {
-    --primary-color: #2980b9;
-    --background-color: #1c1c1c;
-    --text-color: #ffffff;
-    --header-background: #2c2c2c;
-    --footer-background: #333333;
-    --toggle-button-background: #ffffff;
-    --toggle-button-text: #333333;
+    --background-color: #121212; /* Màu nền tối */
+    --text-color: #ffffff; /* Màu chữ sáng */
+    --header-bg-color: #1e1e1e; /* Màu nền cho header */
+    --section-bg-color: #1e1e1e; /* Màu nền cho các section */
+    --link-color: #bb86fc; /* Màu cho liên kết */
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
 header {
     text-align: center;
-    background-color: var(--header-background);
+    background-color: var(--header-bg-color);
     padding: 20px;
     border-radius: 8px;
 }
 
-h1 {
-    margin: 0;
+header img {
+    width: 150px; /* Kích thước hợp lý cho ảnh đại diện */
+    border-radius: 50%; /* Bo tròn ảnh đại diện */
 }
 
-button.toggle-theme {
-    background-color: var(--toggle-button-background);
-    color: var(--toggle-button-text);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+h1, h2 {
+    color: var(--text-color);
 }
 
-.about, .skills, .projects {
-    margin: 20px 0;
+section {
+    background-color: var(--section-bg-color);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+}
+
+li {
+    background-color: var(--header-bg-color);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 .project-item {
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
 }
 
 footer {
     text-align: center;
-    background-color: var(--footer-background);
     padding: 10px;
-    border-radius: 8px;
-    position: relative;
 }
 
-@media (max-width: 600px) {
-    header {
-        padding: 15px;
-    }
-    .project-item {
-        padding: 5px;
-    }
+.project-item {
+    background-color: var(--section-bg-color);
+    margin: 15px 0; /* Tạo khoảng cách giữa các dự án */
+    padding: 15px;
+    border-radius: 8px;
 }
-/* CSS cơ bản cho ảnh */
-header img {
-    width: 150px; /* Kích thước rộng cho ảnh */
-    height: 150px; /* Kích thước cao cho ảnh */
-    border-radius: 50%; /* Làm tròn góc ảnh */
-    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm đổ bóng cho ảnh */
-    margin-bottom: 15px; /* Khoảng cách giữa ảnh và các phần tử bên dưới */
-}
+

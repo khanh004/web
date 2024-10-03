@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #3498db;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --header-background: #f8f8f8;
+    --footer-background: #f1f1f1;
+    --toggle-button-background: #3498db;
+    --toggle-button-text: #ffffff;
+}
+
+.dark-theme {
+    --primary-color: #2980b9;
+    --background-color: #1c1c1c;
+    --text-color: #ffffff;
+    --header-background: #2c2c2c;
+    --footer-background: #333333;
+    --toggle-button-background: #ffffff;
+    --toggle-button-text: #333333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: var(--header-background);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+}
+
+button.toggle-theme {
+    background-color: var(--toggle-button-background);
+    color: var(--toggle-button-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.about, .skills, .projects {
+    margin: 20px 0;
+}
+
+.project-item {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--footer-background);
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+    .project-item {
+        padding: 5px;
+    }
+}
+/* CSS cơ bản cho ảnh */
+header img {
+    width: 150px; /* Kích thước rộng cho ảnh */
+    height: 150px; /* Kích thước cao cho ảnh */
+    border-radius: 50%; /* Làm tròn góc ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm đổ bóng cho ảnh */
+    margin-bottom: 15px; /* Khoảng cách giữa ảnh và các phần tử bên dưới */
+}

@@ -1,0 +1,204 @@
+/* General Styles */
+.back1 {
+    margin: 0;
+    background-color: #1c1c1c;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.menu-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.menudau {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menudau a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.menudau .buy-now {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.arrow {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.bo {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 40px;
+    border: 1px solid black;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.bo:hover .dropdown-content {
+    display: block;
+}
+
+/* Slider */
+.slider-container {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.overlay-content h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.shop-now {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop-now:hover {
+    background-color: #f1f1f1;
+}
+
+/* Grid Content */
+.grid-content2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 30px;
+    gap: 10px;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/broken_2.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+}
+
+.image-container:hover::before {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-container:hover img {
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Media Queries */
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .menudau {
+        flex-direction: column;
+    }
+
+    .slider-container {
+        height: 50vh;
+    }
+
+    .overlay-content h1 {
+        font-size: 32px;
+    }
+
+    .grid-content2 {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 768px) {
+    .grid-content2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) {
+    .grid-content2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

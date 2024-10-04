@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm số lớn nhất và nhỏ nhất</title>
+    <script src="bai2.js"></script>
+</head>
+<body>
+    <h2>Nhập dãy số (cách nhau bởi dấu phẩy):</h2>
+    <input type="text" id="numbers" placeholder="Nhập dãy số">
+    <button onclick="findMinMax()">Tìm số lớn nhất và nhỏ nhất</button>
+    <p id="result"></p>
+<script>
+        function findMinMax() {
+            let input = document.getElementById("numbers").value;
+            let arr = input.split(",").map(Number);
+            let max = Math.max(...arr);
+            let min = Math.min(...arr);
+            document.getElementById("result").innerHTML = `Số lớn nhất: ${max}, Số nhỏ nhất: ${min}`;
+        }
+    </script>
+</body>
+</html>

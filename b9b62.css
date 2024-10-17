@@ -1,0 +1,30 @@
+.math-section {
+    margin-bottom: 20px;
+}
+
+.math-section label {
+    width: 80px;
+    display: inline-block;
+}
+
+.math-section input {
+    width: 60px;
+    margin: 5px;
+}
+
+.math-section button {
+    margin-left: 10px;
+}
+
+.results-section {
+    margin-top: 20px;
+}
+
+.result {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.red-text {
+    color: red;
+}

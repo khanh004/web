@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="b9b4.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>FORM ĐĂNG KÝ</h2>
+        <form id="registrationForm">
+            <label for="ho">Họ:</label>
+            <input type="text" id="ho" name="ho">
+            <span class="error" id="hoError"></span>
+    
+            <label for="ten">Tên:</label>
+            <input type="text" id="ten" name="ten">
+            <span class="error" id="tenError"></span>
+    
+            <label for="ngaysinh">Ngày sinh:</label>
+            <div class="dob">
+                <select id="ngay" name="ngay">
+                    <!-- Thêm các ngày từ 1 đến 31 -->
+                </select>
+                <select id="thang" name="thang">
+                    <!-- Thêm các tháng từ 1 đến 12 -->
+                </select>
+                <select id="nam" name="nam">
+                    <!-- Thêm các năm từ 1950 đến hiện tại -->
+                </select>
+            </div>
+    
+            <label>Giới tính:</label>
+            <div class="radio-group">
+                <input type="radio" name="gioitinh" value="Nam"> Nam
+                <input type="radio" name="gioitinh" value="Nu"> Nữ
+            </div>
+    
+            <label for="sdt">Số điện thoại:</label>
+            <input type="text" id="sdt" name="sdt">
+            <span class="error" id="sdtError"></span>
+    
+            <label>Sở thích:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="sothich" value="Doc sach"> Đọc sách
+                <input type="checkbox" name="sothich" value="Xem phim"> Xem phim
+                <input type="checkbox" name="sothich" value="Nghe nhac"> Nghe nhạc
+                <input type="checkbox" name="sothich" value="Da bong"> Đá bóng
+            </div>
+    
+            <label for="khac">Khác:</label>
+            <textarea id="khac" name="khac"></textarea>
+    
+            <div class="button-group">
+                <button type="button" onclick="validateForm()">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+<script src="b9bai4.js"></script>
+
+</body>
+</html>

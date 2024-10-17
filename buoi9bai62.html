@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="b9b62.css">
+</head>
+<body>
+    <div class="math-section">
+        <h3>các phép toán</h3>
+        <form id="mathForm">
+            <div>
+                <label>phép cộng</label>
+                <input type="number" id="add1" placeholder="Số thứ nhất"> +
+                <input type="number" id="add2" placeholder="Số thứ hai"> =
+                <input type="text" id="addResult" readonly>
+                <button type="button" onclick="calculate('add')">Thực hiện</button>
+            </div>
+            <div>
+                <label>phép trừ</label>
+                <input type="number" id="sub1" placeholder="Số thứ nhất"> -
+                <input type="number" id="sub2" placeholder="Số thứ hai"> =
+                <input type="text" id="subResult" readonly>
+                <button type="button" onclick="calculate('sub')">Thực hiện</button>
+            </div>
+            <div>
+                <label>phép nhân</label>
+                <input type="number" id="mul1" placeholder="Số thứ nhất"> *
+                <input type="number" id="mul2" placeholder="Số thứ hai"> =
+                <input type="text" id="mulResult" readonly>
+                <button type="button" onclick="calculate('mul')">Thực hiện</button>
+            </div>
+            <div>
+                <label>phép chia</label>
+                <input type="number" id="div1" placeholder="Số thứ nhất"> ÷
+                <input type="number" id="div2" placeholder="Số thứ hai"> =
+                <input type="text" id="divResult" readonly>
+                <button type="button" onclick="calculate('div')">Thực hiện</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="results-section">
+        <h3>Các phép toán vừa thực hiện</h3>
+        <div id="results">
+            <span class="result" id="addOperation">PHÉP CỘNG</span>
+            <span class="result" id="subOperation">PHÉP TRỪ</span>
+            <span class="result" id="mulOperation">PHÉP NHÂN</span>
+            <span class="result" id="divOperation">PHÉP CHIA</span>
+        </div>
+    </div>
+
+    <script src="buoi9b62.js"></script>
+</body>
+</html>

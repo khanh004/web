@@ -157,8 +157,89 @@ h1{
 
 .title {
     margin: 0; /* Loại bỏ khoảng cách trên và dưới */
-    font-size: 30;
+    font-size: 30px;
     text-align: left;
 }
+
+/* Các quy tắc mặc định - đã có sẵn */
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .grid-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-content2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-button {
+        margin-right: 100px; /* Điều chỉnh khoảng cách cho màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-content {
+        grid-template-columns: 1fr; /* Đổi thành một cột cho màn hình nhỏ hơn */
+    }
+
+    .grid-content2 {
+        grid-template-columns: 1fr; /* Đổi thành một cột cho màn hình nhỏ hơn */
+    }
+
+    .bang1-bac {
+        height: 400px; /* Điều chỉnh chiều cao cho khung nhỏ hơn */
+    }
+
+    .img {
+        height: 200px; /* Điều chỉnh chiều cao của ảnh */
+    }
+
+    button {
+        width: 90%; /* Đổi kích thước nút cho phù hợp với màn hình nhỏ hơn */
+        margin-left: 5%;
+    }
+
+    .home-button {
+        width: 150px; /* Đổi kích thước nút home cho phù hợp */
+        height: 35px;
+        margin-right: 20px; /* Giảm khoảng cách giữa nút và chữ */
+    }
+
+    .header-container {
+        flex-direction: column; /* Sắp xếp header theo cột trên màn hình nhỏ */
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 24px; /* Giảm kích thước tiêu đề */
+    }
+}
+
+@media (max-width: 480px) {
+    .bang1-bac {
+        height: 300px; /* Điều chỉnh chiều cao khung trên màn hình rất nhỏ */
+    }
+
+    .img {
+        height: 150px; /* Điều chỉnh chiều cao của ảnh */
+    }
+
+    button {
+        width: 100%; /* Đặt nút chiếm toàn bộ chiều rộng khung chứa */
+        margin-left: 0;
+    }
+
+    .home-button {
+        width: 100px; /* Điều chỉnh kích thước cho nút trên màn hình nhỏ nhất */
+        height: 30px;
+        margin-right: 10px; /* Giảm khoảng cách giữa nút và chữ */
+    }
+
+    .title {
+        font-size: 20px; /* Giảm kích thước tiêu đề cho màn hình nhỏ nhất */
+    }
+}
+
 
 

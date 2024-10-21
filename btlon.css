@@ -120,4 +120,45 @@ p{
 h1{
     position: relative; /* Đảm bảo nội dung hiển thị trên lớp phủ */
     z-index: 1; /* Đảm bảo nội dung nằm trên lớp phủ */
+    
+    
 }
+
+.header-container {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Căn trái */
+    margin-bottom: 20px;
+}
+
+.home-button {
+    background-color: #ff5353;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Thu nhỏ nút */
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px; /* Giảm kích thước chữ */
+    border-radius: 5px;
+    margin-right: 390px; /* Khoảng cách giữa nút và chữ "MIỀN BẮC" */
+    width: 200px;
+    height: 40px;
+}
+
+.home-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.home-button:hover {
+    background-color: #ff5353;
+}
+
+.title {
+    margin: 0; /* Loại bỏ khoảng cách trên và dưới */
+    font-size: 30;
+    text-align: left;
+}
+
+

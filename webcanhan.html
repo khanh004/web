@@ -1,57 +1,165 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Personal Portfolio</title>
-        <link rel="stylesheet" href="webcanhan.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <img src="https://github.com/khanh004/web/blob/main/avata.jpg?raw=true" alt="Avatar of Trịnh Huy Khánh">
-                <h1>Trịnh Huy Khánh</h1>
-                <p>Web Developer & Designer</p>
-            </header>
-            
-            <section class="about">
-                <h2>About Me</h2>
-                <p>I'm a passionate web developer with experience in building dynamic and responsive websites. I love coding and I'm always eager to learn new technologies.</p>
-            </section>
-            
-            <section class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="webcanhan.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://github.com/khanh004/web/blob/main/avata.jpg?raw=true" alt="Avatar of Trịnh Huy Khánh">
+            <h1>Trịnh Huy Khánh</h1>
+            <p>Web Developer & Designer</p>
+        </header>
 
-            <section class="projects">
-                <h2>Projects</h2>
-                <div class="project-item">
-                    <h3>Project 1</h3>
-                    <p>A web application built using HTML and CSS</p>
-                    <a href="https://khanh004.github.io/web/buoi5bai2.html">View Project</a>
-                </div>
-                <div class="project-item">
-                    <h3>Project 2</h3>
-                    <p>An e-commerce website with responsive design and user authentication.</p>
-                    <a href="https://khanh004.github.io/web/bai4.html">View Project</a>
-                </div>
-                <div class="project-item">
-                    <h3>Project 3</h3>
-                    <p>A personal blog developed with HTML, CSS, and JavaScript.</p>
-                    <a href="https://khanh004.github.io/web/baitap2buoi6.html">View Project</a>
-                </div>
-            </section>
+        <!-- Thanh điều hướng ngang -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
 
-            <footer>
-                <p>© 2024 Trịnh Huy Khánh. All rights reserved.</p>
-            </footer>
-        </div>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with experience in building dynamic and responsive websites. I love coding and I'm always eager to learn new technologies.</p>
+        </section>
         
-        <script src="wcanhan.js"></script>
-    </body>
-    </html>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 2</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/inline.html">Bài Tập 1 inline</a></li>
+                            <li><a href="https://khanh004.github.io/web/internal.html">Bài Tập 1 internal</a></li>
+                            <li><a href="https://khanh004.github.io/web/external.html">Bài Tập 1 external</a></li>
+                            <li><a href="https://khanh004.github.io/web/bt2vd1.html">Bài 2 Ví dụ 1 </a></li>
+                            <li><a href="https://khanh004.github.io/web/bt2vd2.html">Bài 2 Ví dụ 2 </a></li>
+                            <li><a href="https://khanh004.github.io/web/bt2vd3.html">Bài 2 Ví dụ 3 </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 3</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/bai1vd1.html">Bài 1 Ví dụ 1</a></li>
+                            <li><a href="https://khanh004.github.io/web/baitap1vd2.html">Bài 1 Ví dụ 2</a></li>
+                            <li><a href="https://khanh004.github.io/web/bai3,1.html">Bài 3 Ví dụ 1</a></li>
+                            <li><a href="https://khanh004.github.io/web/bai3,2.html">Bài 3 Ví dụ 2</a></li>
+                            <li><a href="https://khanh004.github.io/web/bai3,2.html">Bài 3 Ví dụ 2</a></li>
+                            <li><a href="https://khanh004.github.io/web/bai3,3.html">Bài 3 Ví dụ 3</a></li>
+                            <li><a href="https://khanh004.github.io/web/bai4.html">Bài 4</a></li>
+                            <li><a href="https://khanh004.github.io/web/baitapanh.html">Bài tập ảnh</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 4</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/Buoi4.html">Bài Tap</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 5</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/buoi5bai1.html">Bài Tap 1</a></li>
+                            <li><a href="https://khanh004.github.io/web/buoi5bai2.html">Bài Tap 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 6</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/baitap1buoi6.html">Bài Tap 1</a></li>
+                            <li><a href="https://khanh004.github.io/web/baitap2buoi6.html">Bài Tap 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 7</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/webcanhan.html">web ca nhan</a></li>
+                            <li><a href="https://khanh004.github.io/web/buoi7bai2.html">Bài Tap 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 8</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/bai1buoi8.html">Bài Tap 1</a></li>
+                            <li><a href="https://khanh004.github.io/web/bai2buoi8.html">Bài Tap 2</a></li>
+                            <li><a href="https://khanh004.github.io/web/bai3buoi8.html">Bài Tap 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 9</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/buoi9b4.html">Bài 4</a></li>
+                            <li><a href="https://khanh004.github.io/web/buoi9bai5.html">Bài 5</a></li>
+                            <li><a href="https://khanh004.github.io/web/buoi9bai61.html">Bài 6.1</a></li>
+                            <li><a href="https://khanh004.github.io/web/buoi9bai62.html">Bài 6.2</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bài Tập Buổi 10</h3>
+                    <button class="accordion">Xem các bài tập</button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="https://khanh004.github.io/web/buoi10b2.html">Bài 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <footer>
+            <p>© 2024 Trịnh Huy Khánh. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="wcanhan.js"></script>
+</body>
+</html>

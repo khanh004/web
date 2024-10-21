@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Tour Du Lịch</title>
+    <link rel="stylesheet" href="bookingtour.css"> <!-- Liên kết CSS -->
+</head>
+<body>
+    <header>
+        <h1>Đặt Tour Du Lịch</h1>
+    </header>
+
+    <section class="tour-registration">
+        <form id="tour-form">
+            <label for="tour-name">Tên Tour:</label>
+            <input type="text" id="tour-name" placeholder="Nhập tên tour" required>
+
+            <label for="tour-date">Ngày khởi hành:</label>
+            <input type="date" id="tour-date" required>
+
+            <label for="tour-duration">Số ngày:</label>
+            <input type="number" id="tour-duration" placeholder="Số ngày" required>
+
+            <label for="tour-people">Số người tham gia:</label>
+            <input type="number" id="tour-people" placeholder="Số người tham gia" required>
+
+            <label for="tour-email">Email liên hệ:</label>
+            <input type="email" id="tour-email" placeholder="Nhập email của bạn" required>
+
+            <label for="tour-phone">Số điện thoại liên hệ:</label>
+            <input type="tel" id="tour-phone" placeholder="Nhập số điện thoại của bạn" required>
+
+            <button type="submit" class="submit-button">Đăng ký Tour</button>
+        </form>
+    </section>
+
+    <section class="tour-list">
+        <h2>Danh sách Tour đã Đăng ký</h2>
+        <table id="tour-table">
+            <thead>
+                <tr>
+                    <th>Tên Tour</th>
+                    <th>Ngày khởi hành</th>
+                    <th>Số ngày</th>
+                    <th>Số người tham gia</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dữ liệu sẽ được thêm vào đây thông qua JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="bookingtour.js"></script> <!-- Liên kết JavaScript -->
+</body>
+</html>
